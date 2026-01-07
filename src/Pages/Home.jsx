@@ -1,10 +1,11 @@
 import { Link } from 'react-router';
 import Header from '../Components/Header';
 
-function Home () {
+function Home() {
     return (
         <>
             <Header />
+            <h1>Home</h1>
         </>
     );
 }
