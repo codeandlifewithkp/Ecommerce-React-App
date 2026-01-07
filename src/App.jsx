@@ -11,9 +11,9 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route path='/' Component={Home} />
-        <Route path='/' Component={Services} />
-        <Route path='/' Component={ContactUs} />
-        <Route path='/' Component={AboutUs} />
+        <Route path='/services' Component={Services} />
+        <Route path='/contact-us' Component={ContactUs} />
+        <Route path='/about-us' Component={AboutUs} />
       </Routes>
     </BrowserRouter>
     </>

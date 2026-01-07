@@ -1,10 +1,10 @@
-import { Link } from 'react-router';
-import Header from '../Components/Header';
+import Header from "../Components/Header";
 
 function Home () {
     return (
         <>
             <Header />
+            <div></div>
         </>
     );
 }

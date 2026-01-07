@@ -1,3 +1,15 @@
+header {
+    display: flex;
+    gap: 20px;
+    background: darkcyan;
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+
+.icon {
+    width: 50px;
+} 
+
 .navbar {
     display: flex;
     gap: 20px;
@@ -6,13 +18,13 @@
 
 .navbar a {
     padding: 5px 10px;
-    border: 1px solid rgb(105, 105, 172);
+    border: 1px solid rgb(33, 33, 100);
     border-radius: 5px;
     color: black;
     transition: 0.5s ease;
 }
 
 .navbar a:hover {
-    background: rgb(105, 105, 172);
+    background: rgb(33, 33, 100);
     color: rgb(158, 158, 255);
 }
