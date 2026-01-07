@@ -4,6 +4,7 @@ function Services () {
     return (
         <>
             <Header />
+            <h1>Services</h1>
         </>
     );
 }
