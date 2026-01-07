@@ -6,6 +6,10 @@ function Home () {
         <>
             <Header />
             <h1>Home</h1>
+            <section>
+                <b>Description</b>
+                <p>This is the Home Page.</p>
+            </section>
             <Footer />
         </>
     );
