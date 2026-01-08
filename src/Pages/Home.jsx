@@ -6,6 +6,7 @@ function Home() {
         <>
             <Header />
             <h1>Home</h1>
+            <p>Code & Life with KP</p>
         </>
     );
 }
