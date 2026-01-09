@@ -7,8 +7,8 @@ function Home () {
         <>
             <Header />
             <section className='hero'>
-                <h1>UNLEASH THE <br /> <span class="glitch-text">BEAST</span></h1>
-                <p>NEXT-GEN GAMING HARDWARE FOR THE ELITE.</p>
+                <h1>Unleash The<br /> <span class="glitch-text">Beast</span></h1>
+                <p>Next-Gen Gaming Hardware for the elite</p>
                 <button class="cta-btn">ENTER STORE</button>
             </section>
             <h1>Home</h1>
