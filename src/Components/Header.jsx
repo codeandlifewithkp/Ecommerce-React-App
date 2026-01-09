@@ -2,7 +2,7 @@ import { Link, NavLink } from 'react-router';
 import icon from './ecommerce.svg';
 import './css/Header.css';
 
-function Header () {
+function Header() {
     return (
         <header>
             <Link to={'/'}><img src={icon} alt='icon' className='icon' /></Link>
@@ -12,6 +12,10 @@ function Header () {
                 <NavLink to={'/Contact-us/'}>Contact Us</NavLink>
                 <NavLink to={'/About-us'}>About Us</NavLink>
             </nav>
+            <div className='buttons'>
+                <button id='btn'>Login</button>
+                <button id='btn'>Sign Up</button>
+            </div>
         </header>
     );
 }
