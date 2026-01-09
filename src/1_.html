@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>World of MSD | Ultimate Store</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@400;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        :root {
+            --primary: #FF5722;
+            /* Fiery Orange */
+            --primary-glow: rgba(255, 87, 34, 0.6);
+            --secondary: #2979FF;
+            /* Cyber Blue */
+            --dark-bg: #050505;
+            /* Deepest Black */
+            --glass: rgba(20, 20, 20, 0.7);
+            --border: rgba(255, 255, 255, 0.1);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: var(--dark-bg);
+            color: white;
+            font-family: 'Rajdhani', sans-serif;
+            overflow-x: hidden;
+        }
+
+        /* --- MOVING GRID BACKGROUND --- */
+        .bg-grid {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image:
+                linear-gradient(rgba(41, 121, 255, 0.1) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(41, 121, 255, 0.1) 1px, transparent 1px);
+            background-size: 50px 50px;
+            z-index: -1;
+            transform: perspective(500px) rotateX(20deg);
+            animation: moveGrid 10s linear infinite;
+            opacity: 0.6;
+        }
+
+        @keyframes moveGrid {
+            0% {
+                background-position: 0 0;
+            }
+
+            100% {
+                background-position: 0 50px;
+            }
+        }
+
+        /* --- HEADER --- */
+        header {
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0.8rem 3rem;
+            /* Padding thoda adjust kiya */
+            background: rgba(0, 0, 0, 0.8);
+            backdrop-filter: blur(15px);
+            border-bottom: 1px solid var(--border);
+        }
+
+        /* NEW BRAND LOGO STYLES */
+        .brand-container {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            text-decoration: none;
+        }
+
+        .logo-img {
+            height: 60px;
+            /* Logo size control */
+            width: auto;
+            border-radius: 5px;
+            /* Optional: smooth corners */
+        }
+
+        .brand-text {
+            display: flex;
+            flex-direction: column;
+            line-height: 1.1;
+        }
+
+        .brand-title {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 1.4rem;
+            font-weight: 800;
+            color: white;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+
+        .brand-subtitle {
+            font-family: 'Rajdhani', sans-serif;
+            font-size: 0.9rem;
+            font-weight: 700;
+            color: var(--primary);
+            /* Orange color */
+            letter-spacing: 3px;
+            text-transform: uppercase;
+        }
+
+        /* ----------------------- */
+
+        .nav-links {
+            display: flex;
+            align-items: center;
+        }
+
+        .nav-links a {
+            color: #ccc;
+            text-decoration: none;
+            margin-left: 30px;
+            font-size: 1rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            position: relative;
+            transition: 0.3s;
+            font-family: 'Orbitron', sans-serif;
+        }
+
+        .nav-links a:hover {
+            color: white;
+        }
+
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0%;
+            height: 2px;
+            background: var(--primary);
+            transition: 0.3s;
+        }
+
+        .nav-links a:hover::after {
+            width: 100%;
+        }
+
+        .cart-icon {
+            position: relative;
+            font-size: 1.2rem;
+            margin-left: 30px;
+            cursor: pointer;
+            color: white;
+        }
+
+        .cart-badge {
+            position: absolute;
+            top: -8px;
+            right: -10px;
+            background: var(--primary);
+            color: white;
+            font-size: 0.7rem;
+            padding: 2px 6px;
+            border-radius: 50%;
+        }
+
+        /* --- HERO SECTION WITH GLITCH --- */
+        .hero {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            text-align: center;
+            padding-top: 60px;
+        }
+
+        .hero h1 {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 5rem;
+            line-height: 1;
+            text-transform: uppercase;
+            position: relative;
+            color: white;
+            animation: float 3s ease-in-out infinite;
+        }
+
+        @keyframes float {
+
+            0%,
+            100% {
+                transform: translateY(0);
+            }
+
+            50% {
+                transform: translateY(-10px);
+            }
+        }
+
+        .glitch-text {
+            color: var(--primary);
+            position: relative;
+            display: inline-block;
+        }
+
+        /* Simple Glitch Animation Idea */
+        .glitch-text::before,
+        .glitch-text::after {
+            content: 'BEAST';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: var(--dark-bg);
+        }
+
+        .glitch-text::before {
+            left: 2px;
+            text-shadow: -1px 0 red;
+            clip: rect(24px, 550px, 90px, 0);
+            animation: glitch-anim-1 2.5s infinite linear alternate-reverse;
+        }
+
+        .glitch-text::after {
+            left: -2px;
+            text-shadow: -1px 0 blue;
+            clip: rect(85px, 550px, 140px, 0);
+            animation: glitch-anim-2 3s infinite linear alternate-reverse;
+        }
+
+        @keyframes glitch-anim-1 {
+            0% {
+                clip: rect(20px, 9999px, 10px, 0);
+            }
+
+            100% {
+                clip: rect(50px, 9999px, 80px, 0);
+            }
+        }
+
+        @keyframes glitch-anim-2 {
+            0% {
+                clip: rect(90px, 9999px, 100px, 0);
+            }
+
+            100% {
+                clip: rect(10px, 9999px, 60px, 0);
+            }
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            color: #888;
+            margin: 20px 0 40px;
+            letter-spacing: 1px;
+        }
+
+        .cta-btn {
+            padding: 15px 50px;
+            background: linear-gradient(45deg, var(--primary), #FF3D00);
+            color: white;
+            border: none;
+            font-family: 'Orbitron';
+            font-size: 1.2rem;
+            font-weight: bold;
+            clip-path: polygon(15px 0, 100% 0, 100% calc(100% - 15px), calc(100% - 15px) 100%, 0 100%, 0 15px);
+            cursor: pointer;
+            transition: 0.3s;
+            box-shadow: 0 0 20px var(--primary-glow);
+        }
+
+        .cta-btn:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 40px var(--primary-glow);
+            letter-spacing: 2px;
+        }
+
+        /* --- BRANDS STRIP --- */
+        .brands-strip {
+            background: #111;
+            padding: 20px 0;
+            display: flex;
+            justify-content: center;
+            gap: 50px;
+            border-top: 1px solid #222;
+            border-bottom: 1px solid #222;
+            color: #444;
+            font-weight: bold;
+            font-family: 'Orbitron';
+            font-size: 1.5rem;
+        }
+
+        /* --- PRODUCTS AREA --- */
+        .section-title {
+            text-align: center;
+            font-family: 'Orbitron';
+            font-size: 2.5rem;
+            margin: 4rem 0 3rem;
+        }
+
+        .section-title span {
+            color: var(--secondary);
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            padding: 0 2rem 4rem;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .card {
+            background: var(--glass);
+            border: 1px solid var(--border);
+            padding: 15px;
+            position: relative;
+            transition: 0.4s;
+            /* Entrance Animation */
+            animation: fadeIn Up 0.8s ease forwards;
+        }
+
+        .card:hover {
+            border-color: var(--secondary);
+            transform: translateY(-10px);
+            box-shadow: 0 0 20px rgba(41, 121, 255, 0.2);
+        }
+
+        .card-img {
+            height: 200px;
+            background: #0a0a0a;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 15px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .card-img::after {
+            /* Shine Effect on Hover */
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 50%;
+            height: 100%;
+            background: linear-gradient(to right, transparent, rgba(255, 255, 255, 0.1), transparent);
+            transform: skewX(-25deg);
+            transition: 0.5s;
+        }
+
+        .card:hover .card-img::after {
+            left: 150%;
+        }
+
+        .card h3 {
+            font-family: 'Orbitron';
+            font-size: 1.2rem;
+        }
+
+        .card .price {
+            color: var(--primary);
+            font-size: 1.4rem;
+            font-weight: bold;
+            margin: 10px 0;
+            display: block;
+        }
+
+        .btn-add {
+            width: 100%;
+            padding: 12px;
+            background: transparent;
+            border: 1px solid var(--secondary);
+            color: var(--secondary);
+            font-family: 'Orbitron';
+            font-weight: bold;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .btn-add:hover {
+            background: var(--secondary);
+            color: white;
+            box-shadow: 0 0 15px var(--secondary);
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="bg-grid"></div>
+
+    <header>
+        <a href="#" class="brand-container">
+            <img src='./WhatsApp Image 2025-12-04 at 07.49.05.jpeg' alt="World of MSD" class="logo-img" />
+
+            <div class="brand-text">
+                <span class="brand-title">WORLD OF MSD</span>
+                <span class="brand-subtitle">PRO GAMING GEAR</span>
+            </div>
+        </a>
+
+        <nav class="nav-links">
+            <a href="#">Home</a>
+            <a href="#">Store</a>
+            <a href="#" style="color:var(--secondary)">Custom Build</a>
+            <span class="cart-icon"><i class="fas fa-shopping-cart"></i><span class="cart-badge">2</span></span>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>UNLEASH THE <br> <span class="glitch-text">BEAST</span></h1>
+        <p>NEXT-GEN GAMING HARDWARE FOR THE ELITE.</p>
+        <button class="cta-btn">ENTER STORE</button>
+    </section>
+
+    <div class="brands-strip">
+        <span>NVIDIA</span> <span>ROG</span> <span>CORSAIR</span> <span>RAZER</span> <span>MSI</span>
+    </div>
+
+    <h2 class="section-title">FEATURED <span>DROPS</span></h2>
+
+    <div class="grid">
+        <div class="card">
+            <div class="card-img"><i class="fas fa-microchip fa-3x" style="color:#333;"></i></div>
+            <h3>RTX 4090 SUPRIM X</h3>
+            <span class="price">₹1,65,000</span>
+            <button class="btn-add">ADD TO CART</button>
+        </div>
+        <div class="card">
+            <div class="card-img"><i class="fas fa-memory fa-3x" style="color:#333;"></i></div>
+            <h3>G.SKILL TRIDENT Z5</h3>
+            <span class="price">₹18,500</span>
+            <button class="btn-add">ADD TO CART</button>
+        </div>
+        <div class="card">
+            <div class="card-img"><i class="fas fa-desktop fa-3x" style="color:#333;"></i></div>
+            <h3>ODYSSEY G9 OLED</h3>
+            <span class="price">₹1,25,000</span>
+            <button class="btn-add">ADD TO CART</button>
+        </div>
+        <div class="card">
+            <div class="card-img"><i class="fas fa-headset fa-3x" style="color:#333;"></i></div>
+            <h3>LOGITECH G PRO X</h3>
+            <span class="price">₹14,999</span>
+            <button class="btn-add">ADD TO CART</button>
+        </div>
+    </div>
+
+</body>
+
+</html>
