@@ -1,21 +1,27 @@
 import { Link, NavLink } from 'react-router';
 import icon from './ecommerce.svg';
 import './css/Header.css';
+import { FaCartShopping } from 'react-icons/fa6';
 
 function Header() {
     return (
         <header>
-            <Link to={'/'}><img src={icon} alt='icon' className='icon' /></Link>
+            <Link to={'/'} className='brand-container'>
+                <img src={icon} alt='icon' className='icon' />
+
+                <div className='brand-text'>
+                    <span className='brand-title'>World of MSD</span>
+                    <span className='brand-subtitle'>Gaming Accessories</span>
+                </div>
+            </Link>
             <nav className='navbar'>
                 <NavLink to={'/'}>Home</NavLink>
-                <NavLink to={'/Services/'}>Services</NavLink>
-                <NavLink to={'/Contact-us/'}>Contact Us</NavLink>
-                <NavLink to={'/About-us'}>About Us</NavLink>
+                <NavLink to={'/store/'}>Store</NavLink>
+                <NavLink to={'/custom-builds/'}>Custom Builds</NavLink>
+                <button id='btn'>
+                    <FaCartShopping />
+                </button>
             </nav>
-            <div className='buttons'>
-                <button id='btn'>Login</button>
-                <button id='btn'>Sign Up</button>
-            </div>
         </header>
     );
 }

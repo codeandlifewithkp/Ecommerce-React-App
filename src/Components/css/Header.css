@@ -1,50 +1,97 @@
 header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
     display: flex;
-    gap: 20px;
-    background: rgb(12, 108, 34);
-    padding: 5px 10px;
-    border-radius: 10px;
+    justify-content: space-between;
+    justify-self: center;
+    align-items: center;
+    padding: 0.8rem 3rem;
+    backdrop-filter: blur(15px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.brand-container {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.brand-text {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.1;
+}
+
+.brand-title {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 1.4rem;
+    font-weight: 800;
+    color: white;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.brand-subtitle {
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: #FF5722;
+    letter-spacing: 3px;
+    text-transform: uppercase;
 }
 
 .icon {
-    width: 50px;
+    height: 60px;
+    width: auto;
+    border-radius: 5px;
 }
 
 .navbar {
     display: flex;
+    align-items: center;
     gap: 20px;
-    border-radius: 10px;
 }
 
 .navbar a {
-    padding: 5px 10px;
-    border-radius: 5px;
-    color: black;
-    transition: 0.3s ease-in-out;
+    color: #ccc;
+    text-decoration: none;
+    margin: 0 5px;
+    font-size: 1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    position: relative;
+    transition: 0.3s;
+    font-family: 'Orbitron', sans-serif;
 }
 
 .navbar a:hover {
-    color: rgb(158, 158, 255);
-    transform: scale(1.09);
+    color: white;
 }
 
-.buttons {
-    display: flex;
-    gap: 10px;
+.navbar a::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background: #FF5722;
+    transition: 0.3s;
+}
+
+.navbar a:hover::after {
+    width: 100%;
 }
 
 #btn {
-    border: 1px solid rgb(3, 50, 170);
-    padding: 0 10px;
-    margin: 10px 5px;
+    border: none;
     background: transparent;
-    border-radius: 5px;
-    color: black;
-    transition: 0.3s ease-in-out;
+    color: #ccc;
+    transition: all 0.3s ease;
 }
 
 #btn:hover {
-    background: rgb(3, 50, 170);
-    color: rgb(158, 158, 255);
-    transform: scale(1.09);
+    color: white;
 }
