@@ -1,5 +1,5 @@
 import { Link, NavLink } from 'react-router';
-import icon from './ecommerce.svg';
+import icon from './icon.png';
 import './css/Header.css';
 import { FaCartShopping } from 'react-icons/fa6';
 
@@ -10,7 +10,7 @@ function Header() {
                 <img src={icon} alt='icon' className='icon' />
 
                 <div className='brand-text'>
-                    <span className='brand-title'>World of MSD</span>
+                    <span className='brand-title'>Brand Name</span>
                     <span className='brand-subtitle'>Gaming Accessories</span>
                 </div>
             </Link>
