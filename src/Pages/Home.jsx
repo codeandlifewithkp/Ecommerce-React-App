@@ -11,6 +11,14 @@ function Home () {
                 <p>Next-Gen Gaming Hardware for the elite</p>
                 <button class="cta-btn">ENTER STORE</button>
             </section>
+
+            <marquee class="brands-strip">
+                <span className='pro'> NVIDIA </span>
+                <span className='pro'> ROG </span> 
+                <span className='pro'> CORSAIR </span> 
+                <span className='pro'> RAZER </span> 
+                <span className='pro'> MSI </span>
+            </marquee>
             <h1>Home</h1>
             <Footer />
         </>
