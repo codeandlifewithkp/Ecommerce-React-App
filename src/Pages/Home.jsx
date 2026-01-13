@@ -14,11 +14,13 @@ function Home () {
             </section>
 
             <marquee class="brands-strip">
-                <span className='pro'> NVIDIA </span>
-                <span className='pro'> ROG </span> 
-                <span className='pro'> CORSAIR </span> 
-                <span className='pro'> RAZER </span> 
-                <span className='pro'> MSI </span>
+                <div className='strip'>
+                    <span className='pro'> NVIDIA </span>
+                    <span className='pro'> ROG </span> 
+                    <span className='pro'> CORSAIR </span> 
+                    <span className='pro'> RAZER </span> 
+                    <span className='pro'> MSI </span>
+                </div>
             </marquee>
             <Footer />
         </>
