@@ -1,4 +1,5 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { MdOutlineDarkMode, MdDarkMode } from "react-icons/md";
 import Home from './Pages/Home';
 import Store from './Pages/Store';
 import CustomBuilds from './Pages/CustomBuilds';
@@ -17,7 +18,7 @@ function App() {
           </Routes>
         </main>
       </BrowserRouter>
-      <button className='theme'></button>
+      <button className='theme'><MdDarkMode size={25} color='white' /></button>
     </>
   );
 }

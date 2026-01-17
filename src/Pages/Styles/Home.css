@@ -1,11 +1,11 @@
 .hero {
-    height: 100vh;
+    height: 80vh;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     text-align: center;
-    padding-top: 60px;
+    padding-top: 65px;
 }
 
 .hero h1 {
@@ -104,10 +104,11 @@
     border-radius: 0;
 }
 
-.cta-btn:hover {
+.cta-page:hover {
     transform: scale(1.05);
     box-shadow: 0 0 40px rgba(255, 87, 34, 0.6);
-    letter-spacing: 2px;
+    letter-spacing: 1px;
+    color: white;
 }
 
 .marquee-container {
@@ -185,6 +186,12 @@
     border-radius: 0;
     display: flex;
     justify-self: self-end;
+}
+
+.ctabtn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 40px rgba(255, 87, 34, 0.6);
+    color: white;
 }
 
 .products {

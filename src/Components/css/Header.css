@@ -90,6 +90,7 @@ header {
     background: transparent;
     color: #ccc;
     transition: all 0.3s ease;
+    padding: 5px;
 }
 
 #btn:hover {
