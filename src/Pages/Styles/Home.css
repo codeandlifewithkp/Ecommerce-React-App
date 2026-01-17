@@ -293,3 +293,141 @@
     transform: scale(1.05);
     box-shadow: 0 0 40px rgba(255, 87, 34, 0.6);
 }
+
+@media (max-width: 956px) {
+    .products {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 674px) {
+    .products {
+        grid-template-columns: repeat(1, 1fr);
+        display: grid;
+        justify-items: center;
+    }
+
+    .hero h1 {
+        font-size: 3rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    .cta-page {
+        font-size: 1rem;
+    }
+
+    .marquee-container .pro {
+        font-size: 1rem;
+    }
+
+    .popular-products h1 {
+        font-size: 2rem;
+    }
+
+    .ctabtn {
+        font-size: 0.8rem;
+    }
+
+    .cards {
+        width: 280px;
+    }
+
+    .cards h2 {
+        font-size: 1.2rem;
+    }
+
+    .cards p {
+        font-size: 0.8rem;
+    }
+
+    .cards .buttons button {
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 400px) {
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .hero p {
+        font-size: 0.8rem;
+    }
+
+    .cta-page {
+        font-size: 0.8rem;
+    }
+
+    .marquee-container .pro {
+        font-size: 0.8rem;
+    }
+
+    .popular-products h1 {
+        font-size: 1.5rem;
+    }
+
+    .ctabtn {
+        font-size: 0.6rem;
+    }
+
+    .cards {
+        width: 240px;
+    }
+
+    .cards h2 {
+        font-size: 1rem;
+    }
+
+    .cards p {
+        font-size: 0.7rem;
+    }
+
+    .cards .buttons button {
+        font-size: 0.6rem;
+    }
+}
+
+@media (max-width: 300px) {
+    .hero h1 {
+        font-size: 1.5rem;
+    }
+
+    .hero p {
+        font-size: 0.6rem;
+    }
+
+    .cta-page {
+        font-size: 0.6rem;
+    }
+
+    .marquee-container .pro {
+        font-size: 0.6rem;
+    }
+
+    .popular-products h1 {
+        font-size: 1rem;
+    }
+
+    .ctabtn {
+        font-size: 0.4rem;
+    }
+
+    .cards {
+        width: 200px;
+    }
+
+    .cards h2 {
+        font-size: 0.8rem;
+    }
+
+    .cards p {
+        font-size: 0.6rem;
+    }
+
+    .cards .buttons button {
+        font-size: 0.4rem;
+    }
+}
