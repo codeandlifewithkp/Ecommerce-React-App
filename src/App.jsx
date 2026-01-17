@@ -1,11 +1,23 @@
+import { useState, useEffect } from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import { MdOutlineDarkMode, MdDarkMode } from "react-icons/md";
 import Home from './Pages/Home';
 import Store from './Pages/Store';
 import CustomBuilds from './Pages/CustomBuilds';
+import Click from './Components/Click';
+import { Change } from './Components/Change';
 import './App.css';
 
 function App() {
+  const [theme, setTheme] = useState('dark');
+
+  const toggleTheme = () => {
+    setTheme((curr) => (curr === 'dark' ? 'light' : 'dark'));
+  };
+
+  useEffect(() => {
+    document.body.className = theme;
+  }, [theme]);
+
   return (
     <>
       <div className="bg-grid" />
@@ -18,7 +30,9 @@ function App() {
           </Routes>
         </main>
       </BrowserRouter>
-      <button className='theme'><MdDarkMode size={25} color='white' /></button>
+      <Change.Provider value={{ theme, toggleTheme }}>
+        <Click />
+      </Change.Provider>
     </>
   );
 }
