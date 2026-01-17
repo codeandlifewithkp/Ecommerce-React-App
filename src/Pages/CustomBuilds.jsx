@@ -1,12 +1,12 @@
 import Header from "../Components/Header";
 
-function ContactUs () {
+function CustomBuilds() {
     return (
         <>
             <Header />
-            <h1>Contact Us</h1>
+            <h1>Custom Builds</h1>
         </>
     );
 }
 
-export default ContactUs;
+export default CustomBuilds;

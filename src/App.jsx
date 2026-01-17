@@ -8,7 +8,6 @@ function App() {
   return (
     <>
       <div className="bg-grid" />
-
       <BrowserRouter>
         <main className="app-content">
           <Routes>
@@ -18,6 +17,7 @@ function App() {
           </Routes>
         </main>
       </BrowserRouter>
+      <button className='theme'></button>
     </>
   );
 }

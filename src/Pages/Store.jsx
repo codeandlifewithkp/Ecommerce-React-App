@@ -1,12 +1,12 @@
 import Header from "../Components/Header";
 
-function Services () {
+function Store() {
     return (
         <>
             <Header />
-            <h1>Services</h1>
+            <h1>Store</h1>
         </>
     );
 }
 
-export default Services;
+export default Store;
