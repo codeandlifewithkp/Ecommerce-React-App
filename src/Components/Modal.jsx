@@ -8,11 +8,17 @@ function Modal({ open, onClose }) {
             <div className="overlay" onClick={onClose}>
                 <div className="modal" onClick={(e) => e.stopPropagation()}>
                     <div className="modal-header">
-                        <h2>User Profile</h2>
                         <button className="close-btn" onClick={onClose}>&times;</button>
                     </div>
                     <div className="modal-content">
                         <p>Welcome back, Gamer!</p>
+                        <p>Enter your credentials to access your account.</p><br />
+                        <form className="modal-form">
+                            <input type="text" placeholder="Username" /><br />
+                            <input type="password" placeholder="Password" /><br />
+                            <a href="#">Don't Have Account?</a><br />
+                            <button className="modal-btn" type="submit">Log in</button>
+                        </form>
                     </div>
                 </div>
             </div>

@@ -40,24 +40,18 @@
 
 .modal-header {
     display: flex;
-    justify-content: space-between;
+    justify-content: end;
     align-items: center;
     margin-bottom: 20px;
     border-bottom: 1px solid #333;
     padding-bottom: 10px;
 }
 
-.modal-header h2 {
-    font-family: 'Orbitron', sans-serif;
-    color: #FF5722;
-    margin: 0;
-}
-
 .close-btn {
     background: transparent;
     border: none;
     color: #888;
-    font-size: 2rem;
+    font-size: 25px;
     cursor: pointer;
     transition: 0.3s;
     line-height: 1;
@@ -67,11 +61,51 @@
     color: #FF5722;
 }
 
-.modal-content p {
+.modal-content {
     font-size: 1.1rem;
     color: #ccc;
     opacity: 0;
     animation: textFadeIn 0.8s ease forwards 0.3s;
+}
+
+.modal-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input {
+    padding: 10px;
+    border: 1px solid #333;
+    border-radius: 5px;
+    color: white;
+    background-color: #1a1a1a;
+    font-family: 'Rajdhani', sans-serif;
+}
+
+.modal-content a {
+    color: #FF5722;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.modal-content a:hover {
+    color: #FF3D00;
+}
+
+.modal-btn {
+    padding: 10px 20px;
+    background: linear-gradient(45deg, #FF5722, #FF3D00);
+    color: white;
+    border: none;
+    font-family: 'Orbitron';
+    font-size: 1rem;
+    font-weight: bold;
+    clip-path: polygon(15px 0, 100% 0, 100% calc(100% - 15px), calc(100% - 15px) 100%, 0 100%, 0 15px);
+    cursor: pointer;
+    transition: 0.3s;
+    box-shadow: 0 0 20px rgba(255, 87, 34, 0.6);
+    border-radius: 0;
 }
 
 @keyframes textFadeIn {
