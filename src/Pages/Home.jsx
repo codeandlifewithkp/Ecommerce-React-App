@@ -8,6 +8,7 @@ function Home () {
             <section>
                 <b>Description</b>
                 <p>This is the Home Page.</p>
+                <button>Click Me</button>
             </section>
         </>
     );
