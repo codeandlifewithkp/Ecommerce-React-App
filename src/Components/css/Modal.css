@@ -40,21 +40,26 @@
 
 .modal-header {
     display: flex;
-    justify-content: end;
+    justify-content: space-between;
     align-items: center;
-    margin-bottom: 20px;
     border-bottom: 1px solid #333;
     padding-bottom: 10px;
+    margin-bottom: 20px;
 }
 
 .close-btn {
-    background: transparent;
+    position: relative;
+    display: flex;
+    justify-self: flex-end;
+    left: 40px;
     border: none;
+    background-color: transparent;
     color: #888;
-    font-size: 25px;
+    font-size: 30px;
     cursor: pointer;
     transition: 0.3s;
     line-height: 1;
+    z-index: 10;
 }
 
 .close-btn:hover {
@@ -83,14 +88,39 @@ input {
     font-family: 'Rajdhani', sans-serif;
 }
 
-.modal-content a {
+.password-container {
+    display: flex;
+    align-items: center;
+    border: 1px solid #333;
+    border-radius: 5px;
+}
+
+.password-container input {
+    flex: 1;
+}
+
+.password-container button {
+    padding: 10px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.password-container button:hover {
+    transform: scale(1.1);
+}
+
+.toggle-text span {
     color: #FF5722;
     text-decoration: none;
     transition: 0.3s;
+    cursor: pointer;
+    font-weight: bold;
 }
 
-.modal-content a:hover {
-    color: #FF3D00;
+.toggle-text span:hover {
+    color: var(--accent-secondary);
 }
 
 .modal-btn {
