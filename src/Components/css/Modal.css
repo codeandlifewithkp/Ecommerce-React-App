@@ -120,7 +120,7 @@ input {
 }
 
 .toggle-text span:hover {
-    color: var(--accent-secondary);
+    color: #FF5722;
 }
 
 .modal-btn {
