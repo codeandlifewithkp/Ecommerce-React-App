@@ -1,18 +1,75 @@
-# React + Vite
+# Gaming Gear Ecommerce Store
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A high-performance, cyberpunk-themed ecommerce web application built with React and Vite. This project focuses on a premium gaming aesthetic with neon visuals, smooth animations, and interactive elements.
 
-Currently, two official plugins are available:
+## 🚀 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### 🎨 Visual & UI/UX
 
-## React Compiler
+- **Cyberpunk Aesthetic**: Immersive dark mode with neon orange (`#FF5722`) accents and glitch text effects.
+- **Dynamic Theming**: Global light/dark mode toggle.
+  - _Dark Mode_: Deep black/gray backgrounds with neon orange glow.
+  - _Light Mode_: Crisp blue color palette (`#0D47A1` & `#1565C0`) for a clean look.
+- **Smooth Animations**:
+  - Infinite scrolling brand marquee with seamless loop.
+  - Hover effects on product cards (lift & shine).
+  - Modal pop-in and fade-in text animations.
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+### 🛍️ Store Functionality
 
-Note: This will impact Vite dev & build performances.
+- **Product Showcase**: Horizontal scrolling carousel for popular products.
+- **Interactive Product Cards**: "Game card" style design with distinct "Buy Now" and "Add to Cart" actions.
 
-## Expanding the ESLint configuration
+### 👤 User Interaction
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- **Authentication Modal**:
+  - Custom modal with backdrop blur.
+  - Toggle between **Log In** and **Sign Up** views.
+  - Form validation and password visibility toggle.
+  - Background scrolling disabled when modal is open.
+- **Responsive Navigation**: Mobile-friendly navbar with menu entry animations.
+
+## 🛠️ Tech Stack
+
+- **Framework**: [React](https://react.dev/)
+- **Build Tool**: [Vite](https://vitejs.dev/)
+- **Styling**: Vanilla CSS (Custom properties & Animations)
+- **Routing**: [React Router](https://reactrouter.com/)
+- **Icons**: [React Icons](https://react-icons.github.io/react-icons/) (Si, Fa, Io, Md)
+
+## 📦 Installation & Setup
+
+1.  **Clone the repository**
+
+    ```bash
+    git clone <repository-url>
+    cd Ecommerce-React-App
+    ```
+
+2.  **Install dependencies**
+
+    ```bash
+    npm install
+    ```
+
+3.  **Run the development server**
+
+    ```bash
+    npm run dev
+    ```
+
+4.  **Build for production**
+    ```bash
+    npm run build
+    ```
+
+## 📂 Project Structure
+
+- `src/Components`: Reusable UI components (Header, Modal, Footer, etc.)
+- `src/Pages`: Route pages (Home, Store, CustomBuilds)
+- `src/Pages/Styles`: Page-specific CSS files
+- `src/App.jsx`: Main application layout and theme provider
+
+---
+
+_Built for the elite gamers._ 🎮

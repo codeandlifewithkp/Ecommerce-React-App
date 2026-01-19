@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Link, NavLink } from 'react-router';
+import { Link, NavLink } from 'react-router-dom';
 import Modal from './Modal';
 import icon from './icon.png';
 import './css/Header.css';

@@ -1,5 +1,5 @@
 import { SiNvidia, SiRepublicofgamers, SiCorsair, SiRazer, SiMsi } from "react-icons/si";
-import { Link } from 'react-router';
+import { Link } from 'react-router-dom';
 import Header from "../Components/Header";
 import Footer from "../Components/Footer";
 import './Styles/Home.css';

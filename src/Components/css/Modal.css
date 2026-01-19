@@ -102,6 +102,7 @@ input {
 .password-container button {
     padding: 10px;
     border: none;
+    color: white;
     background-color: transparent;
     cursor: pointer;
     transition: all 0.3s ease;
