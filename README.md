@@ -28,6 +28,10 @@ A high-performance, cyberpunk-themed ecommerce web application built with React 
   - Form validation and password visibility toggle.
   - Background scrolling disabled when modal is open.
 - **Responsive Navigation**: Mobile-friendly navbar with menu entry animations.
+- **Organized Footer**:
+  - Glassmorphism effect with backdrop blur.
+  - 2-column grid layout for quick link navigation.
+  - Transparent aesthetic with interactive social icons.
 
 ## 🛠️ Tech Stack
 
