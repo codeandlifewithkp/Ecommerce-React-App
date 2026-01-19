@@ -3,7 +3,7 @@ footer {
     width: 100%;
     background-color: transparent;
     backdrop-filter: blur(2px);
-    padding: 25px;
+    padding: 20px;
     text-align: center;
     color: #fff;
     box-sizing: border-box;
@@ -70,6 +70,16 @@ footer .footer-info-item {
     display: flex;
     flex-direction: row;
     gap: 10px;
+}
+
+footer .footer-info-item a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer .footer-info-item a:hover {
+    color: #FF5722;
 }
 
 footer .footer-links {

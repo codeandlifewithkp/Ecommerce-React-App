@@ -1,9 +1,8 @@
 import { Link } from "react-router-dom";
 import { FaFacebookF, FaInstagram, FaYoutube } from "react-icons/fa";
-import { GrMapLocation } from "react-icons/gr";
 import { IoIosMail } from "react-icons/io";
-import { FaPhone } from "react-icons/fa6";
-import { IoTimeOutline } from "react-icons/io5";
+import { FaPhone, FaMapLocationDot } from "react-icons/fa6";
+import { IoTime } from "react-icons/io5";
 import './css/Footer.css';
 
 function Footer() {
@@ -31,19 +30,19 @@ function Footer() {
             <div className="footer-info-container">
                 <div className="footer-info">
                     <div className="footer-info-item">
-                        <GrMapLocation />
+                        <FaMapLocationDot size={20} />
                         <span>Ahmedabad, Gujarat, India - 380001</span>
                     </div>
                     <div className="footer-info-item">
-                        <IoIosMail />
+                        <IoIosMail size={20} />
                         <a href="mailto:kp.codeandlife@gmail.com">kp.codeandlife@gmail.com</a>
                     </div>
                     <div className="footer-info-item">
-                        <FaPhone />
+                        <FaPhone size={20} />
                         <a href="tel:+917016028198">+917016028198</a>
                     </div>
                     <div className="footer-info-item">
-                        <IoTimeOutline />
+                        <IoTime size={20} />
                         <span>Mon-Fri: 9am-6pm</span>
                     </div>
                 </div>
