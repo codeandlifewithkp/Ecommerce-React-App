@@ -72,7 +72,7 @@ A high-performance, cyberpunk-themed ecommerce web application built with React 
 - `src/Components`: Reusable UI components (Header, Modal, Footer, etc.)
 - `src/Pages`: Route pages (Home, Store, CustomBuilds)
 - `src/Pages/Styles`: Page-specific CSS files
-- `src/App.jsx`: Main application layout and theme provider
+- `src/App.jsx`: Main application layout and theme provider.
 
 ---
 
