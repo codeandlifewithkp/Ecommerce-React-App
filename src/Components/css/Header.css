@@ -85,6 +85,36 @@ header {
     width: 100%;
 }
 
+.navbar .search {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.navbar .search input {
+    color: white;
+    transition: all 0.3s ease;
+    width: 0;
+    position: absolute;
+    right: 13%;
+    opacity: 0;
+    visibility: hidden;
+    border: none;
+    border-bottom: 1px solid #FF5722;
+    padding: 5px;
+    font-family: 'Orbitron', sans-serif;
+}
+
+.navbar .search input.active {
+    width: 20rem;
+    opacity: 1;
+    visibility: visible;
+}
+
+.navbar .search input:focus {
+    outline: none;
+}
+
 #btn {
     border: none;
     background: transparent;
@@ -105,14 +135,24 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 10px;
+    gap: 20px;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.95);
+    backdrop-filter: blur(15px);
+    padding: 30px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+    z-index: 999;
 }
 
 .navbar-mobile-links a {
     color: #ccc;
     text-decoration: none;
-    margin: 0 5px;
-    font-size: 1rem;
+    margin: 0;
+    font-size: 1.2rem;
     font-weight: 600;
     text-transform: uppercase;
     position: relative;
@@ -121,40 +161,37 @@ header {
 }
 
 .navbar-mobile-links a:hover {
-    color: white;
+    color: #FF5722;
+    transform: translateX(5px);
 }
 
 .navbar-mobile-links a::after {
-    content: '';
-    position: absolute;
-    bottom: -5px;
-    left: 0;
-    width: 0%;
-    height: 2px;
-    background: #FF5722;
-    transition: 0.3s;
-}
-
-.navbar-mobile-links a:hover::after {
-    width: 100%;
+    display: none;
 }
 
 .navbar-mobile-search {
     display: flex;
     align-items: center;
-    gap: 5px;
+    gap: 10px;
+    width: 80%;
+    margin-bottom: 10px;
 }
 
 .navbar-mobile-search input {
     border: none;
+    border-bottom: 1px solid #FF5722;
     background: transparent;
-    color: #ccc;
+    color: white;
     transition: all 0.3s ease;
-    padding: 5px;
+    padding: 10px;
+    width: 100%;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 1rem;
 }
 
 .navbar-mobile-search input:focus {
     outline: none;
+    background: rgba(255, 255, 255, 0.05);
 }
 
 .navbar-mobile-actions {

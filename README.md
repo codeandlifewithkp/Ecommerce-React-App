@@ -27,10 +27,34 @@ A high-performance, cyberpunk-themed ecommerce web application built with React 
   - Toggle between **Log In** and **Sign Up** views.
   - Form validation and password visibility toggle.
   - Background scrolling disabled when modal is open.
-- **Responsive Navigation**: Mobile-friendly navbar with menu entry animations.
+- **Responsive Navigation**:
+  - Mobile-friendly navbar with slide-down menu.
+  - **Expandable Search Bar**:
+    - Desktop: Smooth slide-open animation, click-outside-to-close logic.
+    - Mobile: Optimized full-width search input within the menu.
+    - Two-step interaction: Open -> Type -> Search.
+
+### 🛍️ Store Functionality
+
+- **Product Showcase**:
+  - **Interactive Carousel**: Horizontal scrolling for popular products.
+  - **Smart Navigation**: Custom arrow controls with hover effects and "disabled" state logic at list boundaries.
+  - **Entry Animations**: Products slide up and fade in (`slideUpFade`) for a premium feel.
+- **Interactive Product Cards**: "Game card" style design with distinct "Buy Now" and "Add to Cart" actions.
+
+### 👤 User Interaction
+
+- **Authentication Modal**:
+  - Custom modal with backdrop blur.
+  - Toggle between **Log In** and **Sign Up** views.
+  - Form validation and password visibility toggle.
+  - Background scrolling disabled when modal is open.
+- **Fully Responsive Layout**:
+  - Standardized breakpoints (`1024px`, `768px`, `480px`) for seamless viewing on all devices.
+  - Mobile-optimized stacking for Footer and Home page sections.
 - **Organized Footer**:
   - Glassmorphism effect with backdrop blur.
-  - 2-column grid layout for quick link navigation.
+  - Responsive stacking layout (vertical on mobile, grid on desktop).
   - Transparent aesthetic with interactive social icons.
 
 ## 🛠️ Tech Stack
