@@ -1,6 +1,6 @@
 # Gaming Gear Ecommerce Store
 
-A high-performance, cyberpunk-themed ecommerce web application built with React and Vite. This project focuses on a premium gaming aesthetic with neon visuals, smooth animations, and interactive elements.
+A high-performance, cyberpunk-themed ecommerce web application built with React and Vite. This project focuses on a premium gaming aesthetic with neon visuals, smooth animations, and interactive elements. 
 
 ## 🚀 Features
 
