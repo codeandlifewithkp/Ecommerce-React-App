@@ -15,37 +15,42 @@ A high-performance, cyberpunk-themed ecommerce web application built with React 
   - Hover effects on product cards (lift & shine).
   - Modal pop-in and fade-in text animations.
 
-### 🛍️ Store & Products
+### 🛍️ Store Functionality
 
-- **Advanced Filtering**:
-  - **Sidebar Controls**: Filter by **Price Range** (₹0 - ₹1,00,000), **Brand**, and **Availability**.
-  - **Explicit Apply**: "Apply Filter" button creates a stable browsing experience.
-  - **Touch-Optimized Slider**: Custom CSS slider with "filled" track visual.
-- **Enhanced Product Cards**:
-  - **Rich Data**: Displays Brand, Star Ratings, Review Counts, and Key Feature icons (RGB, DPI, Wireless).
-  - **Smart Actions**: "Buy Now" / "Add to Cart" for available items; **"Notify Me"** for out-of-stock items.
-  - **Live Status**: Dynamic "In Stock" / "Out of Stock" indicators.
-  - **Wishlist**: Heart toggle button to save favorite items.
 - **Product Showcase**:
   - **Interactive Carousel**: Horizontal scrolling for popular products.
-  - **Smart Navigation**: Custom arrow controls with hover effects.
+  - **Smart Navigation**: Custom arrow controls with hover effects and "disabled" state logic at list boundaries.
+  - **Entry Animations**: Products slide up and fade in (`slideUpFade`) for a premium feel.
+  - **Wishlist Integration**: Heart icon on every product card to toggle wishlist status (with `empty`/`filled` states).
+- **Interactive Product Cards**:
+  - "Game card" style design with distinct "Buy Now" and "Add to Cart" actions.
+  - Modularized `ProductCard` component for better maintainability.
 
-### 👤 User Interaction
+### 👤 User Interaction & Authentication
 
+- **Authentication System**:
+  - **Guest Mode**: "Log In" button opens the Auth Modal.
+  - **Logged In Mode**: Displays user avatar (initials) and a dropdown menu (Profile, Orders, Settings, Logout).
+  - **User Context**: Global state management for user sessions.
 - **Authentication Modal**:
   - Custom modal with backdrop blur.
   - Toggle between **Log In** and **Sign Up** views.
+  - Real-time form input handling (updates global user state).
   - Form validation and password visibility toggle.
   - Background scrolling disabled when modal is open.
 - **Responsive Navigation**:
   - Mobile-friendly navbar with slide-down menu.
-  - **Expandable Search Bar**: Smooth slide-open animation with two-step interaction.
+  - **Expandable Search Bar**:
+    - Desktop: Smooth slide-open animation, click-outside-to-close logic.
+    - Mobile: Optimized full-width search input within the menu.
+    - Two-step interaction: Open -> Type -> Search.
 - **Fully Responsive Layout**:
-  - **Grid System**: Adaptive 3-column product grid that handles sidebar layout gracefully.
-  - **Mobile-First**: Optimized stacking for Footer and Filter Sidebar on smaller screens.
+  - Standardized breakpoints (`1024px`, `768px`, `480px`) for seamless viewing on all devices.
+  - Mobile-optimized stacking for Footer and Home page sections.
 - **Organized Footer**:
   - Glassmorphism effect with backdrop blur.
-  - Interactive social icons and responsive stacking.
+  - Responsive stacking layout (vertical on mobile, grid on desktop).
+  - Transparent aesthetic with interactive social icons.
 
 ## 🛠️ Tech Stack
 
@@ -83,7 +88,9 @@ A high-performance, cyberpunk-themed ecommerce web application built with React 
 
 ## 📂 Project Structure
 
-- `src/Components`: Reusable UI components (Header, Modal, Footer, etc.)
+- `src/Components`: Reusable UI components (Header, Modal, Footer, Product-Card, Marquee-Container, etc.)
+- `src/Data`: Static data files (productsData.js, marqueeData.jsx)
+- `src/Context`: Global state providers (UserContext, CartContext)
 - `src/Pages`: Route pages (Home, Store, CustomBuilds)
 - `src/Pages/Styles`: Page-specific CSS files
 - `src/App.jsx`: Main application layout and theme provider
