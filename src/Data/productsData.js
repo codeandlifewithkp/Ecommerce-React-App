@@ -17,4 +17,14 @@ export const productsData = [
     image:
       "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcT0oqIaWoLR75nFyB0-DvnOZD3m9WScqfousQdJumOu3xKa7z1_fkGnL4RKuTyCGtmLcK5GdfFSHBZMJJQdw8AipfySIk4_K_72OAsI2XGIC7s89BokaXIY",
   },
+  {
+    id: 4,
+    name: "Razer BlackShark V2 X Gaming Headset",
+    image: "https://m.media-amazon.com/images/I/61X3E0-yL6L.jpg",
+  },
+  {
+    id: 5,
+    name: "Logitech G502 HERO High Performance Gaming Mouse",
+    image: "https://m.media-amazon.com/images/I/61mpMH5TzkL._AC_SL1500_.jpg",
+  },
 ];

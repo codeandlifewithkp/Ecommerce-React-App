@@ -25,6 +25,14 @@ A high-performance, cyberpunk-themed ecommerce web application built with React 
 - **Interactive Product Cards**:
   - "Game card" style design with distinct "Buy Now" and "Add to Cart" actions.
   - Modularized `ProductCard` component for better maintainability.
+- **Shop by Category**:
+  - Grid layout with neon-hover cards for "Gaming Mouse", "Keyboards", "Headsets", etc.
+  - Uses `react-icons` for category visualization.
+- **Why Choose Us**:
+  - Info section highlighting "Trusted Brands", "High Performance", and "Gamer Focused" values.
+- **Build Your PC CTA**:
+  - Parallax-style background section inviting users to configure custom rigs.
+  - Features broken down by Performance, Aesthetics, and Support.
 
 ### 👤 User Interaction & Authentication
 
@@ -88,7 +96,7 @@ A high-performance, cyberpunk-themed ecommerce web application built with React 
 
 ## 📂 Project Structure
 
-- `src/Components`: Reusable UI components (Header, Modal, Footer, Product-Card, Marquee-Container, etc.)
+- `src/Components`: Reusable UI components (Header, Modal, Footer, Product-Card, Marquee-Container, Heading, etc.)
 - `src/Data`: Static data files (productsData.js, marqueeData.jsx)
 - `src/Context`: Global state providers (UserContext, CartContext)
 - `src/Pages`: Route pages (Home, Store, CustomBuilds)
