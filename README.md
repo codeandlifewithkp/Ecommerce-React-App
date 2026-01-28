@@ -1,6 +1,6 @@
 # Gaming Gear Ecommerce Store
 
-A high-performance, cyberpunk-themed ecommerce web application built with React and Vite. This project focuses on a premium gaming aesthetic with neon visuals, smooth animations, and interactive elements. 
+A high-performance, cyberpunk-themed ecommerce web application built with React and Vite. This project focuses on a premium gaming aesthetic with neon visuals, smooth animations, and interactive elements.
 
 ## 🚀 Features
 
@@ -15,10 +15,20 @@ A high-performance, cyberpunk-themed ecommerce web application built with React 
   - Hover effects on product cards (lift & shine).
   - Modal pop-in and fade-in text animations.
 
-### 🛍️ Store Functionality
+### 🛍️ Store & Products
 
-- **Product Showcase**: Horizontal scrolling carousel for popular products.
-- **Interactive Product Cards**: "Game card" style design with distinct "Buy Now" and "Add to Cart" actions.
+- **Advanced Filtering**:
+  - **Sidebar Controls**: Filter by **Price Range** (₹0 - ₹1,00,000), **Brand**, and **Availability**.
+  - **Explicit Apply**: "Apply Filter" button creates a stable browsing experience.
+  - **Touch-Optimized Slider**: Custom CSS slider with "filled" track visual.
+- **Enhanced Product Cards**:
+  - **Rich Data**: Displays Brand, Star Ratings, Review Counts, and Key Feature icons (RGB, DPI, Wireless).
+  - **Smart Actions**: "Buy Now" / "Add to Cart" for available items; **"Notify Me"** for out-of-stock items.
+  - **Live Status**: Dynamic "In Stock" / "Out of Stock" indicators.
+  - **Wishlist**: Heart toggle button to save favorite items.
+- **Product Showcase**:
+  - **Interactive Carousel**: Horizontal scrolling for popular products.
+  - **Smart Navigation**: Custom arrow controls with hover effects.
 
 ### 👤 User Interaction
 
@@ -29,33 +39,13 @@ A high-performance, cyberpunk-themed ecommerce web application built with React 
   - Background scrolling disabled when modal is open.
 - **Responsive Navigation**:
   - Mobile-friendly navbar with slide-down menu.
-  - **Expandable Search Bar**:
-    - Desktop: Smooth slide-open animation, click-outside-to-close logic.
-    - Mobile: Optimized full-width search input within the menu.
-    - Two-step interaction: Open -> Type -> Search.
-
-### 🛍️ Store Functionality
-
-- **Product Showcase**:
-  - **Interactive Carousel**: Horizontal scrolling for popular products.
-  - **Smart Navigation**: Custom arrow controls with hover effects and "disabled" state logic at list boundaries.
-  - **Entry Animations**: Products slide up and fade in (`slideUpFade`) for a premium feel.
-- **Interactive Product Cards**: "Game card" style design with distinct "Buy Now" and "Add to Cart" actions.
-
-### 👤 User Interaction
-
-- **Authentication Modal**:
-  - Custom modal with backdrop blur.
-  - Toggle between **Log In** and **Sign Up** views.
-  - Form validation and password visibility toggle.
-  - Background scrolling disabled when modal is open.
+  - **Expandable Search Bar**: Smooth slide-open animation with two-step interaction.
 - **Fully Responsive Layout**:
-  - Standardized breakpoints (`1024px`, `768px`, `480px`) for seamless viewing on all devices.
-  - Mobile-optimized stacking for Footer and Home page sections.
+  - **Grid System**: Adaptive 3-column product grid that handles sidebar layout gracefully.
+  - **Mobile-First**: Optimized stacking for Footer and Filter Sidebar on smaller screens.
 - **Organized Footer**:
   - Glassmorphism effect with backdrop blur.
-  - Responsive stacking layout (vertical on mobile, grid on desktop).
-  - Transparent aesthetic with interactive social icons.
+  - Interactive social icons and responsive stacking.
 
 ## 🛠️ Tech Stack
 
